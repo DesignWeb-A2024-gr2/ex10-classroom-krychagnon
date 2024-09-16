@@ -1,4 +1,11 @@
-
+/* Style body */
+body
+{
+    display: grid;
+    grid-template-columns: 960px;
+    grid-template-rows: 2f 1f;
+    
+}
 .resume-depot {
     max-width: 900px; /* Pour limiter la section à 900 pixels en largeur */
     margin: 30px 0 0 30px; /* Pour es décoler un peu du bord de la page */
