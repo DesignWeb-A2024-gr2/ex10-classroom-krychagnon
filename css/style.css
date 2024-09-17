@@ -1,21 +1,58 @@
 /* Style body */
 body
 {
-    display: grid;
-    grid-template-columns: 960px;
-    grid-template-rows: 2f 1f;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0 0 30px;
     
 }
-.resume-depot {
+
+/* Style section */
+.resume-depot 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
     max-width: 900px; /* Pour limiter la section à 900 pixels en largeur */
-    margin: 30px 0 0 30px; /* Pour es décoler un peu du bord de la page */
 }
 
+.aide
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style table */
+
 .resume-table {
+   
     width: 100%; /* On veut que le tableau occupe toute la largeur de la section */
     table-layout: fixed; /* Pour dimensionner plus facilement le tableau et ses cellules */
 }
 
+table, th
+{
+    border: 1px solid #d1d9e0;
+    border-collapse: collapse;
+}
+
+#ligneTitre
+{
+    background-color: #d1d9e0;
+    border-spacing: none;
+}
+
+td
+{
+    border: none;
+    border-bottom: 1px solid #d1d9e0;
+}
 
 
 
