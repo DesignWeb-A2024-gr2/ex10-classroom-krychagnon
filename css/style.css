@@ -36,22 +36,80 @@ body
     table-layout: fixed; /* Pour dimensionner plus facilement le tableau et ses cellules */
 }
 
+#ligneTitre
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+
+    
+    background-color: #d1d9e0;
+    border-spacing: none;
+    padding: 5px;
+}
+
+#ltGauche
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+#ltDroite
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 table, th
 {
     border: 1px solid #d1d9e0;
     border-collapse: collapse;
 }
 
-#ligneTitre
-{
-    background-color: #d1d9e0;
-    border-spacing: none;
-}
-
 td
 {
     border: none;
     border-bottom: 1px solid #d1d9e0;
+    padding: 0px;
+    margin: 10px;
+}
+
+
+/* Style Hx */
+h2
+{
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h3
+{
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #59636e;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }
 
 
