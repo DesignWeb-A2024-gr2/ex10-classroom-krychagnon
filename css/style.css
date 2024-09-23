@@ -6,8 +6,7 @@ body
     justify-content: center;
     align-items: center;
 
-    margin: 30px 0 0 30px;
-    
+    margin: 30px 0 0 30px; 
 }
 
 /* Style section */
@@ -16,9 +15,9 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:20px;
     
-    
-    max-width: 900px; /* Pour limiter la section à 900 pixels en largeur */
+    max-width: 900px;
 }
 
 .aide
@@ -44,7 +43,6 @@ body
 
     
     background-color: #d1d9e0;
-    border-spacing: none;
     padding: 5px;
 }
 
@@ -65,8 +63,14 @@ body
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    gap: 10px;
 }
 
+.ligneTab
+{
+    padding: 10px;
+}
 
 table, th
 {
@@ -74,15 +78,48 @@ table, th
     border-collapse: collapse;
 }
 
+table
+{
+    border-radius: 5px;
+}
+
 td
 {
-    border: none;
     border-bottom: 1px solid #d1d9e0;
     padding: 0px;
     margin: 10px;
 }
 
+/* Style Readme */
+.readme
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
+    border: 1px solid #d1d9e0;
+    border-radius: 5px;
+
+}
+.readme-entete
+{
+    display: flex;
+    align-self: start; 
+
+    padding: 10px;
+}
+
+.readme-entete:hover
+{
+    background-color: #d1d9e0;
+}
+
+.readme-detail, .credit
+{
+    text-align: center;
+    margin: 25px;
+}
 /* Style Hx */
 h2
 {
@@ -112,6 +149,36 @@ h3
     text-transform: none;
 }
 
+/* Style liens */
+a
+{
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #59636e;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/* style hr */
+hr
+{
+    display: block;
+    border-style: solid;
+    width: 100%;
+    color: #d1d9e0;
+    margin: 0px;
+}
+
+/* Style buton */
+#bouton
+{
+    background-color: #04aa6D;
+}
 
 
 
